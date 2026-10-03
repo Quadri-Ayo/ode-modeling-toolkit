@@ -4,9 +4,7 @@ The central design principle is to separate the **mathematical definition of a d
 
 Instead of rewriting an ODE solver for every model, a model is represented through its mathematical right-hand side:
 
-$$
-\frac{d\mathbf{x}}{dt}=f(t,\mathbf{x},\theta).
-$$
+$$\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right)$$
 
 The model definition can then be passed to a reusable numerical solver.
 
