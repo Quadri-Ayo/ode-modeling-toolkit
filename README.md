@@ -57,30 +57,13 @@ The same numerical workflow can then be applied to a different system without re
 ---
 
 ## From One Equation to a General Dynamical System
+The toolkit is designed around the general form:
 
-The toolkit is designed around the general form
+$$\frac{d\mathbf{x}}{dt} = f(t, \mathbf{x}; \theta)$$
 
-$$
-\frac{d\mathbf{x}}{dt}
-=
-f(t,\mathbf{x};\theta),
-$$
+where $\mathbf{x} \in \mathbb{R}^n$. For example, an SIR epidemic model is given by:
 
-where \(\mathbf{x}\in\mathbb{R}^n\).
-
-For example, an SIR epidemic model is given by
-
-$$
-\frac{dS}{dt}=-\beta SI,
-$$
-
-$$
-\frac{dI}{dt}=\beta SI-\gamma I,
-$$
-
-$$
-\frac{dR}{dt}=\gamma I.
-$$
+$$\frac{dS}{dt} = -\beta SI, \quad \frac{dI}{dt} = \beta SI - \gamma I, \quad \frac{dR}{dt} = \gamma I$$
 
 The corresponding implementation can be written as:
 
