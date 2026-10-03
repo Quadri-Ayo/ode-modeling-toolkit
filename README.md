@@ -11,14 +11,9 @@ $$
 The model definition can then be passed to a reusable numerical solver.
 
 ### Example: Logistic Growth Model
+Consider the logistic growth equation:
 
-Consider the logistic growth equation
-
-$$
-\frac{dN}{dt}$$
-=
-$$ rN\left(1-\frac{N}{K}\right),
-$$
+$$\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right)$$
 
 where:
 
